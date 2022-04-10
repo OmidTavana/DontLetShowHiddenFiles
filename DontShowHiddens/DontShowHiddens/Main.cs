@@ -53,8 +53,11 @@ namespace DontShowHiddens
             key.Close();
         }
 
-        private void WhileForm_MouseClick(object sender, MouseEventArgs e)
+      
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Application.Exit();
         }
     }
 }
